@@ -1,0 +1,57 @@
+/*standard*/
+
+.standard{
+    background-image: url("/app/images/small/standard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 710px;
+    text-align: center;
+}
+
+.standard-1{
+    padding: 105px;
+    font-size: 45px;
+    color: white;
+    height: 100px;
+}
+
+.standard-1 h2{
+    margin: 0 auto;
+}
+
+.standard-2{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.block-stn{
+    text-align: start;
+    color: white;
+    width: 370px;
+    padding: 30px;
+}
+
+.block-stn h2{
+    font-size: 23px;
+}
+
+.block-stn hr{
+    display: inline-flex;
+}
+
+.block-stn p{
+    font-size: 15px;
+}
+
+.standard-btn{
+    line-height:35px;
+    width: 230px;
+    border-radius: 40px;
+    height: 35px;
+    text-transform: uppercase;
+    background-color: white;
+    text-align: center;
+    color: #2ee6cb;
+    margin: 0 auto;
+}

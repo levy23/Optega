@@ -1,0 +1,221 @@
+header{
+    background-image: url("/app/images/bg-header.png");
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 670px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*checkbox*/
+
+.check {
+    padding: 2px;
+    padding-bottom: 50px;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+.check:hover:before {
+    opacity: 1;
+}
+.check:hover svg {
+    stroke: #ec5482;
+}
+#cbx:checked + .check svg {
+    stroke: #ec5482;
+}
+#cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+#cbx2:checked + .check svg {
+    stroke: #ec5482;
+}
+#cbx2:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+#cbx2:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+.head-bg{
+    width: 400px;
+    height: 520px;
+    text-align: center;
+    background-color: white;
+}
+
+.headcontainer{
+    height: 520px;
+    border-radius: 0px 0px 15px 15px;
+    border-left: 25px solid rgba(255,255,255,.5);
+    border-right: 25px solid rgba(255,255,255,.5);
+    border-bottom: 25px solid rgba(255,255,255,.5);
+}
+
+
+
+.head-text p{
+    color: #ec5482;
+    font-size: 20px;
+}
+
+.head-text .text1{
+    font-size: 20px;
+    color: #263238;
+    text-transform: uppercase;
+}
+
+hr{
+    width: 35px;
+    color: black;
+}
+
+.email-pool{
+    font-weight: bold;
+    color: #2ee6cb;
+    border: 3px solid #77e3cf;
+    border-radius: 40px;
+    width: 350px;
+    height: 40px;
+    background-color: #ecfdfb;
+}
+
+
+.accept{
+    display: flex;
+    font-size: 7px;
+    text-align: start;
+    padding: 20px;
+}
+
+.accept p{
+    color: #c0c0c0;
+}
+
+.btn-voucher{
+    line-height:35px;
+    width: 230px;
+    border-radius: 40px;
+    height: 35px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0deg, #f85b90 0%, #ff4281 98%);
+    color: white;
+    margin: 0 auto;
+}
+
+.btn{
+    text-decoration: none;
+}
+
+.voucher{
+    margin: 0 auto;
+}
+
+.background{
+    background-image: url("/app/images/BG.png");
+    background-size: contain;
+    position: absolute;
+    width: 1440px;
+    height: 5900px;
+    background-repeat: no-repeat;
+    z-index: 3;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.info-header{
+    margin-right: 250px;
+    color: white;
+}
+
+.info-header h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.info{
+    background-color: #ec5482;
+    width: 290px;
+    font-size: 35px;
+    border-radius: 20px;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.info span{
+    font-size: 20px;
+}
+
+.small-text{
+    font-size: 9px;
+}
+
+.info-header hr{
+    display: inline-block;
+}
+
+.letter{
+    letter-spacing: 5.3mm;
+}
+
+.info-header p{
+    font-size: 17px;
+    word-spacing: 3mm;
+}

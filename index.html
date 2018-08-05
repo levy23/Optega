@@ -2,13 +2,13 @@
 <html lang="pl" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="/app/styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&amp;subset=latin-ext" rel="stylesheet">
     <title>app</title>
 </head>
 <body>
-<div class="container">
+<div class="background">
     <header>
         <div class="info-header">
             <h2>Pozbądź się</br>wady wzroku </br>w 24 sekundy!</h2>
@@ -28,7 +28,13 @@
             <label textarea="email" for="field-email"></label>
             <input class="email-pool" type="email" placeholder="E-mial" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
             <div class="accept">
-                <input class="box-accept" type="checkbox"><p>Wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w niniejszym formularzu przez Optegra Polska Sp. z o.o. z siedzibą w Warszawie (Administrator danych), a także na ich przetwarzanie w celach marketingowych, w tym wysyłanie materiałów promocyjno-informacyjnych, oferowanie produktów i usług, zgodnie z Ustawą o ochronie danych osobowych. Zostałem poinformowany o przysługującym mi prawie dostępu do treści przekazanych danych oraz prawie ich poprawiania oraz odwołania zgody lub złożenia sprzeciwu wobec udostępnienia danych.</p>
+                <input type="checkbox" id="cbx2" style="display: none;">
+                <label for="cbx2" class="check">
+                    <svg width="18px" height="18px" viewBox="0 0 18 18">
+                        <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                        <polyline points="1 9 7 14 15 4"></polyline>
+                    </svg>
+                </label><p>Wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w niniejszym formularzu przez Optegra Polska Sp. z o.o. z siedzibą w Warszawie (Administrator danych), a także na ich przetwarzanie w celach marketingowych, w tym wysyłanie materiałów promocyjno-informacyjnych, oferowanie produktów i usług, zgodnie z Ustawą o ochronie danych osobowych. Zostałem poinformowany o przysługującym mi prawie dostępu do treści przekazanych danych oraz prawie ich poprawiania oraz odwołania zgody lub złożenia sprzeciwu wobec udostępnienia danych.</p>
             </div>
             <div class="voucher">
             <a class="btn" href=""><div class="btn-voucher">Pobierz voucher</div></a>
@@ -37,6 +43,7 @@
         </div>
     </header>
         <section class="information">
+            <div class="container">
             <img class="info-img" src="/app/images/small/form.png">
             <h2>Mam Voucher, co dalej?</h2>
             <div class="info-3">
@@ -73,12 +80,14 @@
                 <a class="btn" href=""><div class="btn-voucher">umów się online</div></a>
             </div>
             <div class="voucher">
-            <a class="btn" href=""><div class="btn-voucher"><img src="app/images/small/telephone.png">222 466 122</div></a>
+            <a class="btn" href=""><div class="btn-voucher"><img class="telephone" src="app/images/small/telephone.png">222 466 122</div></a>
         </div>
+            </div>
             </div>
             </div>
         </section>
     <section class="standard">
+        <div class="container">
         <div class="standard-1">
         <img src="app/images/small/medal.png">
         <h2>Najwyższe standardy</h2>
@@ -97,8 +106,10 @@
                 <a class="btn" href=""><div class="standard-btn">dowiedz się więcej</div></a>
             </div>
         </div>
+        </div>
     </section>
     <section class="doctor">
+        <div class="container">
         <div class="doctor-img">
             <img src="app/images/small/medicine.png">
             <h2>Najlepsi lekarze</h2>
@@ -106,26 +117,29 @@
             <p>Jesteśmy <strong>liderem korekcji wad wzroku w Polsce.</strong> Od lat współpracujemy  z najlepszymi lekarzami chirurgami.</p>
         </div>
         <div class="doctor-photo">
-            <div class="doctor-info"><img class="photo-bg" src="app/images/small/joanna.png"><p>dr n. med. <strong>Joanna Sempińska-Szewczyk</strong></p>
+            <div class="doctor-info"><img class="photo-bg" src="app/images/small/woman1.png"><p>dr n. med. <strong>Joanna Sempińska-Szewczyk</strong></p>
             <hr color="#727779"/>
             <p>lekarz okulista, operacje zaćmy</p>
+                <br>
             <a class="btn" href=""><div class="btn-dr">więcej</div></a>
         </div>
-            <div class="doctor-info"><img class="photo-bg" src="app/images/small/marcin.png"><p>lek. <strong>Marcin Smorawski</strong></p>
+            <div class="doctor-info"><img class="photo-bg" src="app/images/small/man1.png"><p>lek. <strong>Marcin Smorawski</strong></p>
                 <hr color="#727779"/>
                 <p>lekarz okulista, laserowa korekcjawzroku/stożek rogówki</p>
                 <br>
                 <a class="btn" href=""><div class="btn-dr">więcej</div></a>
             </div>
-            <div class="doctor-info"><img class="photo-bg" src="app/images/small/magdalena.png"><p>lek. <strong>Magdalena Bielak</strong></p>
+            <div class="doctor-info"><img class="photo-bg" src="app/images/small/woman2.png"><p>lek. <strong>Magdalena Bielak</strong></p>
                 <hr color="#727779"/>
                 <p>lekarz okulista, laserowa korekcja wzroku</p>
                 <br>
                 <a class="btn" href=""><div class="btn-dr">więcej</div></a>
             </div>
         </div>
+        </div>
     </section>
     <section class="price">
+        <div class="container">
         <div class="price-img">
             <img src="app/images/small/coupon.png">
             <h2>ceny Zabiegów w Promocji</h2>
@@ -144,8 +158,10 @@
                 <div class="price-5"><h3>EBK</h3><p>dla pary oczu</p><span>5399 zł</span></div>
             </div>
         </div>
+        </div>
     </section>
     <section class="clients">
+        <div class="container">
         <div class="clients-img">
             <img src="app/images/small/users.png">
             <h3>Opinie naszych klientów</h3>
@@ -154,7 +170,7 @@
         </div>
         <div class="clients-three">
             <div class="clients-photo">
-                <div class="clients-info"><div class="clients-bg"><img  src="app/images/small/woman.png"></div><p><strong>Agnieszka Kaczmarek</strong><br>Opinia FB</p>
+                <div class="clients-info"><div class="clients-bg"><img  src="app/images/small/user_icon.png"></div><p><strong>Agnieszka Kaczmarek</strong><br>Opinia FB</p>
                     <img src="app/images/small/gwiazdka.png">
                     <img src="app/images/small/gwiazdka.png">
                     <img src="app/images/small/gwiazdka.png">
@@ -170,18 +186,20 @@
                     <hr color="#727779"/>
                     <p>Jestem zachwycona opieką okulistyczną w klinice OPTEGRA. Wszystko funkcjonuje w niej perfekcyjnie. Począwszy od umawiania wizyt.</p>
                 </div>
-                <div class="clients-info"><div class="clients-bg"><img src="app/images/small/man.png"></div><p><strong>Krystyna Lurko</strong><br>opinia z forum</p>
+                <div class="clients-info"><div class="clients-bg"><img src="app/images/small/user2_icon.png"></div><p><strong>Krystyna Lurko</strong><br>opinia z forum</p>
                     <img src="app/images/small/gwiazdka.png">
                     <img src="app/images/small/gwiazdka.png">
                     <img src="app/images/small/gwiazdka.png">
-                    <h3>Przede wszystkim - to bezpieczne</h3>
+                    <h3>Przede wszystkim - <br>to bezpieczne</h3>
                     <hr color="#727779"/>
                     <p>Wzrok jest dla mnie najważniejszym zmysłem z uwagi na rodzaj pracy, który wykonuje. Po zabiegu nie tylko wreszcie lepiej widzę, ale przede wszystkim wada już mnie nie ogranicza w codziennych czynnościach.</p>
                 </div>
         </div>
         </div>
+        </div>
     </section>
     <section class="formulage">
+        <div class="container">
         <div class="formulage-img">
             <img src="app/images/small/cloud-computing.png">
             <p>Do tej pory pobrano</p>
@@ -203,7 +221,13 @@
                 <input class="email-for" type="text" name="surname" id="surname" placeholder="Nazwisko">
                 </div>
                 <div class="accept">
-                    <input class="box-accept" type="checkbox"><p>Wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w niniejszym formularzu przez Optegra Polska Sp. z o.o. z siedzibą w Warszawie (Administrator danych), a także na ich przetwarzanie w celach marketingowych, w tym wysyłanie materiałów promocyjno-informacyjnych, oferowanie produktów i usług, zgodnie z Ustawą o ochronie danych osobowych. Zostałem poinformowany o przysługującym mi prawie dostępu do treści przekazanych danych oraz prawie ich poprawiania oraz odwołania zgody lub złożenia sprzeciwu wobec udostępnienia danych.</p>
+                    <input type="checkbox" id="cbx" style="display: none;">
+                    <label for="cbx" class="check">
+                        <svg width="18px" height="18px" viewBox="0 0 18 18">
+                            <path d="M1,9 L1,3.5 C1,2 2,1 3.5,1 L14.5,1 C16,1 17,2 17,3.5 L17,14.5 C17,16 16,17 14.5,17 L3.5,17 C2,17 1,16 1,14.5 L1,9 Z"></path>
+                            <polyline points="1 9 7 14 15 4"></polyline>
+                        </svg>
+                    </label><p>Wyrażam dobrowolnie zgodę na przetwarzanie danych osobowych zawartych w niniejszym formularzu przez Optegra Polska Sp. z o.o. z siedzibą w Warszawie (Administrator danych), a także na ich przetwarzanie w celach marketingowych, w tym wysyłanie materiałów promocyjno-informacyjnych, oferowanie produktów i usług, zgodnie z Ustawą o ochronie danych osobowych. Zostałem poinformowany o przysługującym mi prawie dostępu do treści przekazanych danych oraz prawie ich poprawiania oraz odwołania zgody lub złożenia sprzeciwu wobec udostępnienia danych.</p>
                 </div>
                 </div>
                 <div class="formulage-logo">
@@ -217,27 +241,28 @@
             </div>
             </div>
         </div>
+        </div>
     </section>
-    <footer class="footer">
+    <footer>
+        <div class="container">
         <div class="footer-logo">
             <img src="app/images/LOGO.png">
         </div>
         <div class="footer-three">
             <div class="footer-1"><p><strong>Kliniki Okulistyczne</strong> OptegraWarszawa, Kraków, Poznań, Szczecin, Wrocław.</p>
                 </div>
-            <hr color="#727779"/>
             <div class="footer-2">
                 <img src="app/images/small/fb.png">
                 <p><a class="foot-email" href="kontakt@optegra.com.pl">kontakt@optegra.com.pl</a></p>
                 <p>infolinia:<strong class="tel"> 222 466 111</strong></p>
                 <a class="www" href="www.optegrga.com.pl"><strong>www.optegrga.com.pl</strong></a>
             </div>
-            <hr color="#727779"/>
             <div class="footer-3">
                 <a class="btn" href=""><div class="standard-btn">dowiedz się więcej</div></a>
             </div>
         </div>
         <div class="regulam">Polityka prywatności Regulamin Cookies</div>
+        </div>
     </footer>
 </div>
 </body>

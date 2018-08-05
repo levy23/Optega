@@ -1,3 +1,12 @@
+@import url("_header.css");
+@import url("_clients.css");
+@import url("_doctor.css");
+@import url("_price.css");
+@import url("_footer.css");
+@import url("_standard.css");
+@import url("_info.css");
+@import url("_formulage.css");
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -17,15 +26,93 @@ header{
     outline: none;
 }
 
+/*checkbox*/
+
+.check {
+    padding: 2px;
+    padding-bottom: 50px;
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 18px;
+    height: 18px;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+.check:before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(34,50,84,0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+.check svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+.check svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+.check svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+.check:hover:before {
+    opacity: 1;
+}
+.check:hover svg {
+    stroke: #ec5482;
+}
+#cbx:checked + .check svg {
+    stroke: #ec5482;
+}
+#cbx:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+#cbx:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+#cbx2:checked + .check svg {
+    stroke: #ec5482;
+}
+#cbx2:checked + .check svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+#cbx2:checked + .check svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
 .head-bg{
     width: 400px;
-    height: 520px;
+    height: 535px;
     text-align: center;
     background-color: white;
 }
 
 .headcontainer{
-    height: 520px;
+    height: 535px;
     border-radius: 0px 0px 15px 15px;
     border-left: 25px solid rgba(255,255,255,.5);
     border-right: 25px solid rgba(255,255,255,.5);
@@ -91,15 +178,19 @@ hr{
     margin: 0 auto;
 }
 
-.container {
+.background{
     background-image: url("/app/images/BG.png");
     background-size: contain;
     position: absolute;
-    left: 0px;
     width: 1440px;
     height: 5900px;
     background-repeat: no-repeat;
     z-index: 3;
+}
+
+.container {
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .info-header{
@@ -144,6 +235,17 @@ hr{
 }
 
 /*info*/
+
+.btn-voucher {
+    font-size: 18px;
+}
+
+.btn-voucher img{
+    display: inline-block;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
 
 .information{
     text-align: center;
@@ -280,7 +382,17 @@ hr{
     margin: 0 auto;
 }
 
+.standard-btn:hover{
+    border: 1px solid white;
+    background-color: #2ee6cb;
+    color: white;
+}
+
 /*doctor*/
+
+.doctor{
+    height: 760px;
+}
 
 .doctor-img{
     text-align: center;
@@ -300,7 +412,7 @@ hr{
 
 .doctor-photo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: center;
 }
 
@@ -312,7 +424,8 @@ hr{
 }
 
 .doctor-info{
-    width: 180px;
+    padding: 30px;
+    width: 210px;
     height: 400px;
 }
 
@@ -324,11 +437,17 @@ hr{
     line-height:35px;
     border-radius: 40px;
     height: 35px;
+    width: 120px;
     text-transform: uppercase;
     text-align: center;
     border: 1px solid #2ee6cb;
     color: #2ee6cb;
     margin: 0 auto;
+}
+
+.btn-dr:hover{
+    background-color: #2ee6cb;
+    color: white;
 }
 
 /*price*/
@@ -417,7 +536,7 @@ hr{
 
 .clients-photo{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 
 .clients-img h3{
@@ -433,20 +552,16 @@ hr{
 }
 
 .clients-info{
-    width: 300px;
+    padding-left: 50px;
+    width: 220px;
+}
+
+.clients-info p{
+    font-size: 10px;
 }
 
 .clients-info hr{
     display: inline-block;
-}
-
-
-.clients-bg{
-    text-align: center;
-    background-color: #2ee6cb;
-    width: 65px;
-    border-radius: 60%;
-    padding: 20px;
 }
 
 /*formulage*/
@@ -519,6 +634,10 @@ hr{
     width: 400px
 }
 
+.formulage-one .head-text{
+    padding-left: 15px;
+}
+
 .formulage-logo{
     padding: 35px;
 }
@@ -551,8 +670,11 @@ hr{
 }
 
 /*footer*/
+.footer-logo{
+    text-align: center;
+}
 
-.footer{
+footer{
     background-image: url("/app/images/small/footer-bg.png");
     background-repeat: no-repeat;
     text-align: center;
@@ -561,7 +683,7 @@ hr{
 
 .footer-three{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding-top: 10px;
 }
 
@@ -606,6 +728,13 @@ hr{
     margin: 0 auto;
 }
 
+.footer-3 .standard-btn:hover{
+    background-color: white;
+    border: 1px solid #2ee6cb;
+    color: #2ee6cb;
+}
+
+
 .footer-three hr{
     width: 1px;
 }
@@ -618,6 +747,7 @@ hr{
 .tel{
     color: #2ee6cb;
 }
+
 
 ::placeholder {
     padding-left: 20px;
@@ -636,9 +766,62 @@ hr{
 }
 
 /*średni telefon lub IPad*/
-@media only screen and (max-width: 680px) {
+/*@media only screen and (max-width: 680px) {
     .container {width: 500px;}
+    .background {
+        width: 500px;
+        background-image: url("/app/images/small/mobile/BG.png");
+    }
+
+    .footer-three{
+        display:inline-block;
+        justify-content: center;
+    }
+
+    .footer-1{
+        text-align: center;
+    }
+
+    .formulage{
+        background-image: url("/app/images/small/mobile/footer.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        text-align: center;
+        background-position: center;
+    }
+
+    .formulage-img{
+        display: none;
+    }
+
+    .back-head{
+        display: block;
+        width: 500px;
+    }
+
+    .formulage-container{
+        display: block;
+        width: 500px;
+    }
+
+    .formulage-bg{
+        display: block;
+        width: 500px;
+    }
+
+    .doctor{
+        width: 100%
+    }
+
+}*/
+
+/*średni telefon lub IPad*/
+@media only screen and (max-width: 680px) {
     .container {
+        width: 500px;
+    }
+
+    .background {
         background-image: url("/app/images/small/mobile/mobile.png");
         background-size: contain;
         position: absolute;

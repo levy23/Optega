@@ -1,0 +1,78 @@
+/*info*/
+
+.information{
+    text-align: center;
+}
+
+.info-3{
+    display: flex;
+    justify-content: center;
+    height: 150px;
+}
+
+.one{
+    width: 300px;
+    text-align: start;
+    padding: 30px;
+}
+
+.info-bg-1{
+    background-image: url("/app/images/small/1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+.info-bg-2{
+    background-image: url("/app/images/small/2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+.info-bg-3{
+    background-image: url("/app/images/small/3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 250px;
+}
+
+.one hr{
+    display: table-caption;
+}
+
+.information h2{
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #263238;
+    height: 30px;
+}
+
+.information span{
+    color: #38ead0;
+    font-size: 20px;
+}
+
+.information p{
+    color: #727779;
+    font-size: 12px;
+}
+
+.info-img{
+    width: 3%;
+}
+
+.info-f{
+    margin: 0 auto;
+    width: 550px;
+}
+
+.info-btn{
+    display: flex;
+    padding: 25px;
+
+}
+
+.btn-voucher img{
+    width: 20px;
+}

@@ -1,0 +1,104 @@
+/*formulage*/
+
+.formulage-img{
+    text-align: center;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.formulage-img h3{
+    color: #263238;
+    margin: 0 auto;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.formulage-img p{
+    padding-top: 15px;
+    color: #263238;
+    margin: 0 auto;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.formulage{
+    background-image: url("/app/images/small/chlopak-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 1150px;
+    text-align: center;
+    background-position: 0px 250px;
+}
+
+.back-head{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 120px;
+}
+
+.formulage-container{
+    border-radius: 15px;
+    border: 25px solid rgba(255,255,255,.5);
+}
+
+.formulage-bg{
+    background-color: white;
+    display: flex;
+    width: 700px;
+    padding: 10px;
+    text-align: left;
+}
+
+.email-for{
+    border: 3px solid #77e3cf;
+    border-radius: 40px;
+    width: 350px;
+    height: 40px;
+    background-color: #ecfdfb;
+    margin: 5px;
+}
+
+.formulage .accept{
+    font-size: 7px;
+    width: 300px;
+}
+
+.formulage-one{
+    width: 400px
+}
+
+.formulage-one .head-text{
+    padding-left: 15px;
+}
+
+.formulage-logo{
+    padding: 35px;
+}
+
+.formulage-logo h3{
+    padding-top: 10px;
+    color: #2ee6cb;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+.formulage-logo p{
+    color: #2ee6cb;
+}
+
+.formulage-logo .btn-voucher{
+    line-height:35px;
+    width: 230px;
+    border-radius: 40px;
+    height: 35px;
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(0deg, #f85b90 0%, #ff4281 98%);
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.formulage-logo .voucher{
+    padding-top: 50px;
+}

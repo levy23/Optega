@@ -1,0 +1,75 @@
+/*price*/
+
+.price{
+    background-image: url("/app/images/small/price.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 780px;
+    text-align: center;
+}
+
+.price-img{
+    text-align: center;
+    padding: 120px;
+    margin: 0 auto;
+}
+
+.price-img h2{
+    margin: 0 auto;
+    font-size: 60px;
+    padding: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.price-img p{
+    color: white;
+}
+
+.price-img span{
+    color: white;
+    font-size: 40px;
+}
+
+.price-five{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.price-5{
+    background-image: url("/app/images/small/price-bg.png");
+    background-size: cover;
+    border-radius: 10px;
+    margin: 10px;
+    width: 140px;
+    height: 190px;
+}
+
+.price-5 h3{
+    height: 5px;
+    color: #2ee6cb;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.price-5 p{
+    height: 60px;
+    color: #2ee6cb;
+    font-size: 10px;
+}
+
+.price-5 span{
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 70px;
+    color: #2ee6cb;
+}
+
+.price-text{
+    width: 600px;
+    text-align: center;
+    padding-bottom: 3px;
+    margin: 0 auto;
+}
