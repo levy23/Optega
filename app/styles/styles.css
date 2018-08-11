@@ -13,7 +13,7 @@ body{
 
 
 header{
-    background-image: url("/app/images/bg-header.png");
+    background-image: url("../images/bg-header.png");
     display: flex;
     justify-content: flex-end;
     padding-right: 150px;
@@ -179,7 +179,7 @@ hr{
 }
 
 .background{
-    background-image: url("/app/images/BG.png");
+    background-image: url("../images/BG.png");
     background-size: contain;
     position: absolute;
     width: 1440px;
@@ -264,21 +264,21 @@ hr{
 }
 
 .info-bg-1{
-    background-image: url("/app/images/small/1.png");
+    background-image: url("../images/small/1.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 250px;
 }
 
 .info-bg-2{
-    background-image: url("/app/images/small/2.png");
+    background-image: url("../images/small/2.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 250px;
 }
 
 .info-bg-3{
-    background-image: url("/app/images/small/3.png");
+    background-image: url("../images/small/3.png");
     background-repeat: no-repeat;
     background-size: contain;
     height: 250px;
@@ -327,7 +327,7 @@ hr{
 /*standard*/
 
 .standard{
-    background-image: url("/app/images/small/standard.png");
+    background-image: url("../images/small/standard.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 710px;
@@ -453,7 +453,7 @@ hr{
 /*price*/
 
 .price{
-    background-image: url("/app/images/small/price.png");
+    background-image: url("../images/small/price.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 780px;
@@ -491,7 +491,7 @@ hr{
 }
 
 .price-5{
-    background-image: url("/app/images/small/price-bg.png");
+    background-image: url("../images/small/price-bg.png");
     background-size: cover;
     border-radius: 10px;
     margin: 10px;
@@ -588,7 +588,7 @@ hr{
 }
 
 .formulage{
-    background-image: url("/app/images/small/chlopak-bg.png");
+    background-image: url("../images/small/chlopak-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     width: 1440px;
@@ -675,7 +675,7 @@ hr{
 }
 
 footer{
-    background-image: url("/app/images/small/footer-bg.png");
+    background-image: url("../images/small/footer-bg.png");
     background-repeat: no-repeat;
     text-align: center;
     background-position: center;
